@@ -16,6 +16,7 @@ const Code:RouteComponent = () => import('@/views/Code/Code.vue');
 const QRCode:RouteComponent = () => import('@/views/QRCodes/QRCodes.vue');
 const GetHelp:RouteComponent = () => import('@/views/GetHelp/GetHelp.vue');
 const Jukebox: RouteComponent = () => import('@/views/Jukebox/Jukebox.vue');
+const StudySection: RouteComponent = () => import('@/views/StudySection/StudySection.vue');
 
 
 type EditScheduleProps = {
@@ -102,6 +103,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Jukebox',
     path: '/jukebox',
     component: Jukebox,
+  },
+  {
+    name: 'StudySection',
+    path: '/studySection',
+    component: StudySection,
   },
 ];
 
